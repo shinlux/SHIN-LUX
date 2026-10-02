@@ -2,7 +2,9 @@
 <html lang="fa" dir="rtl">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>شین لوکس | فروشگاه آرایشی و بهداشتی</title>
@@ -28,7 +30,7 @@ body {
     background: white;
 }
 
-/* Header */
+/* هدر */
 
 header {
     padding: 20px;
@@ -40,7 +42,6 @@ header {
 .logo {
     font-size: 25px;
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
 .subtitle {
@@ -49,7 +50,7 @@ header {
     color: #ddd;
 }
 
-/* Search */
+/* جستجو */
 
 .search-box {
     padding: 15px;
@@ -66,7 +67,7 @@ header {
     background: #f7f7f7;
 }
 
-/* Categories */
+/* دسته بندی */
 
 .categories {
     display: flex;
@@ -82,22 +83,22 @@ header {
     padding: 9px 16px;
     font-size: 13px;
     background: white;
-    cursor: pointer;
 }
 
 .category.active {
     background: #111;
     color: white;
-    border-color: #111;
 }
 
-/* Products */
+/* عنوان محصولات */
 
 .section-title {
     padding: 10px 15px 15px;
     font-size: 18px;
     font-weight: bold;
 }
+
+/* محصولات */
 
 .products {
     display: grid;
@@ -137,7 +138,6 @@ header {
     font-size: 14px;
     font-weight: bold;
     line-height: 1.7;
-    min-height: 48px;
 }
 
 .category-name {
@@ -154,10 +154,9 @@ header {
     border-radius: 9px;
     background: #111;
     color: white;
-    cursor: pointer;
 }
 
-/* Bottom navigation */
+/* منوی پایین */
 
 .bottom-nav {
     position: fixed;
@@ -186,6 +185,7 @@ header {
 }
 
 </style>
+
 </head>
 
 
@@ -193,33 +193,195 @@ header {
 
 <div class="app">
 
-    <!-- Header -->
 
-    <header>
+<!-- هدر -->
 
-        <div class="logo">
-            شین لوکس
-        </div>
+<header>
 
-        <div class="subtitle">
-            فروشگاه آرایشی و بهداشتی
-        </div>
+<div class="logo">
+شین لوکس
+</div>
 
-    </header>
+<div class="subtitle">
+فروشگاه آرایشی و بهداشتی
+</div>
 
-
-    <!-- Search -->
-
-    <div class="search-box">
-
-        <input
-            type="text"
-            placeholder="جستجوی محصول..."
-        >
-
-    </div>
+</header>
 
 
-    <!-- Categories -->
+<!-- جستجو -->
 
-    <div class="categories
+<div class="search-box">
+
+<input
+type="text"
+placeholder="جستجوی محصول..."
+>
+
+</div>
+
+
+<!-- دسته بندی ها -->
+
+<div class="categories">
+
+<div class="category active">
+همه
+</div>
+
+<div class="category">
+مراقبت پوست
+</div>
+
+<div class="category">
+مراقبت مو
+</div>
+
+<div class="category">
+آرایشی
+</div>
+
+<div class="category">
+بهداشت شخصی
+</div>
+
+</div>
+
+
+<!-- عنوان -->
+
+<div class="section-title">
+
+محصولات
+
+</div>
+
+
+<!-- محصولات -->
+
+<div class="products">
+
+
+<!-- محصول اول -->
+
+<div class="product">
+
+<div class="product-image">
+
+<img
+src="https://raw.githubusercontent.com/shinlux/SHIN-LUX/main/file_0000000043208210922a65e0b33ac92f.png"
+alt="مام داو قارچی"
+>
+
+</div>
+
+<div class="product-info">
+
+<div class="product-name">
+
+مام داو قارچی
+
+</div>
+
+<div class="category-name">
+
+بهداشت شخصی
+
+</div>
+
+<button class="add-btn">
+
+افزودن به سبد
+
+</button>
+
+</div>
+
+</div>
+
+
+<!-- محصول دوم -->
+
+<div class="product">
+
+<div class="product-image">
+
+<img
+src="https://raw.githubusercontent.com/shinlux/SHIN-LUX/main/file_0000000061548210b673c0b7ba4e4203.png"
+alt="نرم کننده ترمیمی آون"
+>
+
+</div>
+
+<div class="product-info">
+
+<div class="product-name">
+
+نرم کننده ترمیمی آون
+
+</div>
+
+<div class="category-name">
+
+مراقبت مو
+
+</div>
+
+<button class="add-btn">
+
+افزودن به سبد
+
+</button>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- منوی پایین -->
+
+<div class="bottom-nav">
+
+<div class="nav-item">
+
+<span class="nav-icon">🏠</span>
+
+خانه
+
+</div>
+
+<div class="nav-item">
+
+<span class="nav-icon">🛍️</span>
+
+محصولات
+
+</div>
+
+<div class="nav-item">
+
+<span class="nav-icon">🛒</span>
+
+سبد خرید
+
+</div>
+
+<div class="nav-item">
+
+<span class="nav-icon">👤</span>
+
+حساب من
+
+</div>
+
+</div>
+
+
+</body>
+
+    </html>
