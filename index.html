@@ -5,196 +5,199 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<title>SHIN LUX GALLERY | فروشگاه آرایشی و بهداشتی</title>
+<title>شین لوکس | فروشگاه آرایشی و بهداشتی</title>
 
 <style>
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Tahoma, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Arial, sans-serif;
 }
 
 body {
-    background: #f7f7f7;
-    color: #222;
+  background: #f7f7f7;
+  color: #222;
 }
 
 .app {
-    max-width: 600px;
-    margin: auto;
-    min-height: 100vh;
-    background: white;
+  max-width: 600px;
+  margin: auto;
+  min-height: 100vh;
+  background: white;
 }
 
-/* هدر */
-
 header {
-    padding: 20px;
-    background: #111;
-    color: white;
-    text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+  text-align: center;
 }
 
 .logo {
-    font-size: 25px;
-    font-weight: bold;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .subtitle {
-    margin-top: 7px;
-    font-size: 13px;
-    color: #ddd;
+  margin-top: 7px;
+  font-size: 13px;
+  color: #ddd;
 }
 
 /* جستجو */
 
 .search-box {
-    padding: 15px;
-    background: white;
+  padding: 15px;
 }
 
 .search-box input {
-    width: 100%;
-    padding: 13px 16px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    outline: none;
-    font-size: 14px;
-    background: #f7f7f7;
+  width: 100%;
+  padding: 13px 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  font-size: 14px;
+  background: #f7f7f7;
 }
 
 /* دسته بندی */
 
 .categories {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    padding: 5px 15px 15px;
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 5px 15px 15px;
 }
 
 .category {
-    white-space: nowrap;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    padding: 9px 16px;
-    font-size: 13px;
-    background: white;
+  white-space: nowrap;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 9px 16px;
+  font-size: 13px;
+  background: white;
+  cursor: pointer;
 }
 
 .category.active {
-    background: #111;
-    color: white;
+  background: #111;
+  color: white;
 }
 
-/* عنوان محصولات */
+/* عنوان */
 
 .section-title {
-    padding: 10px 15px 15px;
-    font-size: 18px;
-    font-weight: bold;
+  padding: 10px 15px 15px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* محصولات */
 
 .products {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    padding: 0 15px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 0 15px 100px;
 }
 
 .product {
-    border: 1px solid #eee;
-    border-radius: 14px;
-    overflow: hidden;
-    background: white;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  overflow: hidden;
+  background: white;
 }
 
 .product-image {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    background: #f1f1f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .product-info {
-    padding: 12px;
+  padding: 12px;
 }
 
 .product-name {
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1.7;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.7;
 }
 
 .category-name {
-    margin-top: 5px;
-    font-size: 11px;
-    color: #777;
+  margin-top: 5px;
+  font-size: 11px;
+  color: #777;
 }
 
 .add-btn {
-    width: 100%;
-    margin-top: 10px;
-    padding: 9px;
-    border: none;
-    border-radius: 9px;
-    background: #111;
-    color: white;
+  width: 100%;
+  margin-top: 10px;
+  padding: 9px;
+  border: none;
+  border-radius: 9px;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+.no-result {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 15px;
+  color: #777;
 }
 
 /* منوی پایین */
 
 .bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 600px;
-    background: white;
-    border-top: 1px solid #eee;
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 5px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 5px;
 }
 
 .nav-item {
-    text-align: center;
-    font-size: 12px;
-    color: #555;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
 }
 
 .nav-icon {
-    display: block;
-    font-size: 20px;
-    margin-bottom: 4px;
+  display: block;
+  font-size: 20px;
+  margin-bottom: 4px;
 }
 
 </style>
 
 </head>
 
-
 <body>
 
 <div class="app">
-
-
-<!-- هدر -->
 
 <header>
 
@@ -215,130 +218,57 @@ header {
 
 <input
 type="text"
+id="searchInput"
 placeholder="جستجوی محصول..."
 >
 
 </div>
 
 
-<!-- دسته بندی ها -->
+<!-- دسته بندی -->
 
 <div class="categories">
 
-<div class="category active">
+<div class="category active"
+data-category="همه">
 همه
 </div>
 
-<div class="category">
+<div class="category"
+data-category="مراقبت پوست">
 مراقبت پوست
 </div>
 
-<div class="category">
+<div class="category"
+data-category="مراقبت مو">
 مراقبت مو
 </div>
 
-<div class="category">
+<div class="category"
+data-category="آرایشی">
 آرایشی
 </div>
 
-<div class="category">
+<div class="category"
+data-category="بهداشت شخصی">
 بهداشت شخصی
 </div>
 
 </div>
 
-
-<!-- عنوان -->
 
 <div class="section-title">
-
 محصولات
-
 </div>
 
 
-<!-- محصولات -->
+<!-- محصولات اینجا نمایش داده می شوند -->
 
-<div class="products">
-
-
-<!-- محصول اول -->
-
-<div class="product">
-
-<div class="product-image">
-
-<img
-src="https://raw.githubusercontent.com/shinlux/SHIN-LUX/main/file_0000000043208210922a65e0b33ac92f.png"
-alt="مام داو قارچی"
->
-
+<div
+class="products"
+id="productsContainer">
 </div>
 
-<div class="product-info">
-
-<div class="product-name">
-
-مام داو قارچی
-
-</div>
-
-<div class="category-name">
-
-بهداشت شخصی
-
-</div>
-
-<button class="add-btn">
-
-افزودن به سبد
-
-</button>
-
-</div>
-
-</div>
-
-
-<!-- محصول دوم -->
-
-<div class="product">
-
-<div class="product-image">
-
-<img
-src="https://raw.githubusercontent.com/shinlux/SHIN-LUX/main/file_0000000061548210b673c0b7ba4e4203.png"
-alt="نرم کننده ترمیمی آون"
->
-
-</div>
-
-<div class="product-info">
-
-<div class="product-name">
-
-نرم کننده ترمیمی آون
-
-</div>
-
-<div class="category-name">
-
-مراقبت مو
-
-</div>
-
-<button class="add-btn">
-
-افزودن به سبد
-
-</button>
-
-</div>
-
-</div>
-
-
-</div>
 
 </div>
 
@@ -349,31 +279,42 @@ alt="نرم کننده ترمیمی آون"
 
 <div class="nav-item">
 
-<span class="nav-icon">🏠</span>
+<span class="nav-icon">
+🏠
+</span>
 
 خانه
 
 </div>
 
+
 <div class="nav-item">
 
-<span class="nav-icon">🛍️</span>
+<span class="nav-icon">
+🛍️
+</span>
 
 محصولات
 
 </div>
 
+
 <div class="nav-item">
 
-<span class="nav-icon">🛒</span>
+<span class="nav-icon">
+🛒
+</span>
 
 سبد خرید
 
 </div>
 
+
 <div class="nav-item">
 
-<span class="nav-icon">👤</span>
+<span class="nav-icon">
+👤
+</span>
 
 حساب من
 
@@ -381,6 +322,241 @@ alt="نرم کننده ترمیمی آون"
 
 </div>
 
+
+<script>
+
+/* -------------------------
+   تنظیمات
+------------------------- */
+
+let products = [];
+
+let selectedCategory = "همه";
+
+
+const productsContainer =
+document.getElementById(
+"productsContainer"
+);
+
+const searchInput =
+document.getElementById(
+"searchInput"
+);
+
+const categoryButtons =
+document.querySelectorAll(
+".category"
+);
+
+
+/* -------------------------
+   دریافت محصولات
+   از products.json
+------------------------- */
+
+fetch("products.json")
+
+.then(response => {
+
+  if (!response.ok) {
+    throw new Error(
+      "خطا در دریافت محصولات"
+    );
+  }
+
+  return response.json();
+
+})
+
+.then(data => {
+
+  products = data;
+
+  showProducts();
+
+})
+
+.catch(error => {
+
+  productsContainer.innerHTML = `
+
+    <div class="no-result">
+
+      خطا در بارگذاری محصولات.
+
+    </div>
+
+  `;
+
+  console.error(error);
+
+});
+
+
+/* -------------------------
+   نمایش محصولات
+------------------------- */
+
+function showProducts() {
+
+  const searchText =
+  searchInput.value
+  .trim()
+  .toLowerCase();
+
+
+  productsContainer.innerHTML = "";
+
+
+  const filteredProducts =
+  products.filter(product => {
+
+
+    const categoryMatch =
+
+    selectedCategory === "همه" ||
+
+    product.category ===
+    selectedCategory;
+
+
+    const searchMatch =
+
+    product.name
+    .toLowerCase()
+    .includes(searchText);
+
+
+    return categoryMatch &&
+           searchMatch;
+
+  });
+
+
+  if (filteredProducts.length === 0) {
+
+    productsContainer.innerHTML = `
+
+      <div class="no-result">
+
+        محصولی پیدا نشد.
+
+      </div>
+
+    `;
+
+    return;
+
+  }
+
+
+  filteredProducts.forEach(product => {
+
+
+    const productElement =
+    document.createElement("div");
+
+
+    productElement.className =
+    "product";
+
+
+    productElement.innerHTML = `
+
+      <div class="product-image">
+
+        <img
+          src="${product.image}"
+          alt="${product.name}"
+        >
+
+      </div>
+
+
+      <div class="product-info">
+
+        <div class="product-name">
+
+          ${product.name}
+
+        </div>
+
+
+        <div class="category-name">
+
+          ${product.category}
+
+        </div>
+
+
+        <button class="add-btn">
+
+          افزودن به سبد
+
+        </button>
+
+      </div>
+
+    `;
+
+
+    productsContainer.appendChild(
+      productElement
+    );
+
+  });
+
+}
+
+
+/* -------------------------
+   دسته بندی
+------------------------- */
+
+categoryButtons.forEach(button => {
+
+  button.addEventListener(
+    "click",
+    function() {
+
+
+      categoryButtons.forEach(btn => {
+
+        btn.classList.remove(
+          "active"
+        );
+
+      });
+
+
+      this.classList.add(
+        "active"
+      );
+
+
+      selectedCategory =
+      this.dataset.category;
+
+
+      showProducts();
+
+    }
+  );
+
+});
+
+
+/* -------------------------
+   جستجو
+------------------------- */
+
+searchInput.addEventListener(
+  "input",
+  showProducts
+);
+
+</script>
 
 </body>
 
